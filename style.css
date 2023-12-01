@@ -3,8 +3,8 @@
   margin: 0;
 }
 
-body {
-  /* padding: 10px 50px; */
+button {
+  cursor: pointer;
 }
 
 /* Nav */
@@ -16,6 +16,7 @@ nav {
   color: white;
   padding: 0 100px;
   font-size: 22px;
+  cursor: pointer;
 }
 
 .logo {
@@ -86,6 +87,7 @@ main {
 .characters {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 40px;
 }
 
@@ -101,33 +103,46 @@ main {
   border-radius: 8px;
 }
 
-.quote{
-    background-color: #e5e7eb;
-    text-align: center;
-    height: 400px;
-    font-size: 36px;
+.quote {
+  background-color: #e5e7eb;
+  font-style: italic;
+  height: 200px;
+  font-size: 36px;
+  padding: 50px 300px;
 }
 
-.banner{
-    display: flex;
-    /* justify-content: center; */
-    gap: 50px;
-    background-color: #3882f6;
-    color: white;
-    padding: 30px 60px;
-    align-self: center;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
+.quote p:last-child {
+  text-align: center;
+  margin-top: 50px;
 }
 
-.banner button{
-    color: white;
-    border: 1px solid white;
-    background-color: #3882f6;
-    padding: 16px 32px;
-    border-radius: 8px;
-    font-size: 16px;
+.banner {
+  display: flex;
+  /* justify-content: center; */
+  gap: 50px;
+  background-color: #3882f6;
+  color: white;
+  padding: 30px 60px;
+  align-self: center;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.banner button {
+  color: white;
+  border: 1px solid white;
+  background-color: #3882f6;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
 /* Footer */
+footer {
+  margin-top: 80px;
+  background-color: #1f2937;
+  color: #f9faf8;
+  text-align: center;
+  padding: 32px;
+}
